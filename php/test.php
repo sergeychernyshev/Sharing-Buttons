@@ -1,6 +1,5 @@
 <?php
-
-require_once('SharingButtons.php');
+require_once(__DIR__ . '/SharingButtons.php');
 
 $template = 'http://digg.com/submit?title={$title}&bodytext={$description}&url={$url.raw}';
 
@@ -14,4 +13,32 @@ $expect = 'http://digg.com/submit?title=Sharing+Buttons&bodytext=SharingButtons.
 
 $result = SharingButtons::substituteVariablesInString($template, $variables, 'urlencoded');
 
+echo ($expect == $result ? 'success' : 'fail') . "\n";
+
+// testing for modifiers
+$template = '{$a} {$b.urlencoded} {$c.spaceencoded}';
+
+$expect = '{$a} y+y+y z%20z%20z';
+$variables = array(
+	'b' => 'y y y',
+	'c' => 'z z z',
+);
+$result = SharingButtons::substituteVariablesInString($template, $variables);
+echo ($expect == $result ? 'success' : 'fail') . "\n";
+
+$expect = 'x x x {$b.urlencoded} z%20z%20z';
+$variables = array(
+	'a' => 'x x x',
+	'c' => 'z z z',
+);
+$result = SharingButtons::substituteVariablesInString($template, $variables);
+echo ($expect == $result ? 'success' : 'fail') . "\n";
+
+$expect = 'x x x y+y+y z%20z%20z';
+$variables = array(
+	'a' => 'x x x',
+	'b' => 'y y y',
+	'c' => 'z z z',
+);
+$result = SharingButtons::substituteVariablesInString($template, $variables);
 echo ($expect == $result ? 'success' : 'fail') . "\n";
