@@ -63,11 +63,12 @@ class SharingButtons {
 			// if this variable wasn't specified, replace with empty string
 			if (!array_key_exists($varname, $variables) || $variables[$varname] == '') {
 				if ($style_replacements) {
-					if ($escape) {
-						$replacements[] = '<span class="variable" title="Set variable value to substitute">{$<span class="varname">' . escape($varname) . '</span>}</span>';
-					} else {
-						$replacements[] = '<span class="variable" title="Set variable value to substitute">{$<span class="varname">' . $varname . '</span>}</span>';
-					}
+					$replacement = '<span class="variable" title="Set variable value to substitute">';
+					$replacement .= '<span class="opencurly">{</span><span class="dollarsign">$</span>';
+					$replacement .= '<span class="varname">' . ($escape ? escape($varname) : $varname) . '</span>';
+					$replacement .= '<span class="closecurly">}</span></span>';
+
+					$replacements[] = $replacement;
 				} else {
 					$replacements[] = $varcall;
 				}
