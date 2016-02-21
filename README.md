@@ -24,14 +24,6 @@ Share on Google Plus
 
 URL: `https://plus.google.com/share?url={$url}`
 
-## Add to Delicious
-
-Delicious is a social bookmarking web service for storing, sharing, and discovering web bookmarks. 
-
-![Add to Delicious](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/delicious.gif) <a href='http://delicious.com/save?url=https%3A%2F%2Fgithub.com%2Fsergeychernyshev%2FSharing-Buttons&title=Sharing+Buttons' target='blank'>Add to Delicious</a>
-
-URL: `http://delicious.com/save?url={$url}&title={$title}`
-
 ## Share on Facebook
 
 Facebook is a social utility that connects people with friends and others who work, study and live around them. People use Facebook to keep up with friends, upload an unlimited number of photos, post links and videos, and learn more about the people they meet. 
@@ -55,6 +47,14 @@ Post to Reddit
 ![Reddit this](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/reddit.gif) <a href='http://reddit.com/submit?url=https%3A%2F%2Fgithub.com%2Fsergeychernyshev%2FSharing-Buttons&title=Sharing+Buttons' target='blank'>Reddit this</a>
 
 URL: `http://reddit.com/submit?url={$url}&title={$title}`
+
+## Add to Delicious
+
+Delicious is a social bookmarking web service for storing, sharing, and discovering web bookmarks. 
+
+![Add to Delicious](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/delicious.gif) <a href='http://delicious.com/save?url=https%3A%2F%2Fgithub.com%2Fsergeychernyshev%2FSharing-Buttons&title=Sharing+Buttons' target='blank'>Add to Delicious</a>
+
+URL: `http://delicious.com/save?url={$url}&title={$title}`
 
 ## Stumble!
 
