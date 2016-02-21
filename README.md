@@ -1,13 +1,5 @@
 Code libraries to work with sharing buttons and corresponding intent URLs
 
-## Tweet it
-
-Twitter is a social networking and micro-blogging service that allows its users to send and read other users' updates (otherwise known as tweets), which are text-based posts of up to 140 characters in length.
-
-![Tweet it](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/twitter.gif) <a href='http://twitter.com/home?status=Sharing+Buttons:+https%3A%2F%2Fgithub.com%2Fsergeychernyshev%2FSharing-Buttons' target='blank'>Tweet it</a>
-
-URL: `http://twitter.com/home?status={$title}:+{$url}`
-
 ## Email
 
 Send an email
@@ -16,21 +8,21 @@ Send an email
 
 URL: `mailto:?Subject={$title.spaceencoded}&Body={$description.spaceencoded}%0D%0A{$url}`
 
-## List on Etsy
+## Tweet it
 
-List an item on Etsy on-line craft and DIY storefront.
+Twitter is a social networking and micro-blogging service that allows its users to send and read other users' updates (otherwise known as tweets), which are text-based posts of up to 140 characters in length.
 
-![List on Etsy](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/etsy.png) <a href='http://www.etsy.com/create_listing1.php' target='blank'>List on Etsy</a>
+![Tweet it](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/twitter.gif) <a href='http://twitter.com/home?status=Sharing+Buttons:+https%3A%2F%2Fgithub.com%2Fsergeychernyshev%2FSharing-Buttons' target='blank'>Tweet it</a>
 
-URL: `http://www.etsy.com/create_listing1.php`
+URL: `http://twitter.com/home?status={$title}:+{$url}`
 
-## Post to LiveJournal
+## Post to Google+
 
-Post it to LiveJournal blog or community.
+Share on Google Plus
 
-![Post to LiveJournal](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/livejournal.png) <a href='http://www.livejournal.com/update.bml?usejournal=sergeyche&subject=Sharing+Buttons&event=Code+libraries+to+work+with+sharing+buttons' target='blank'>Post to LiveJournal</a>
+![Post to Google+](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/googleplus.png) <a href='https://plus.google.com/share?url=https%3A%2F%2Fgithub.com%2Fsergeychernyshev%2FSharing-Buttons' target='blank'>Post to Google+</a>
 
-URL: `http://www.livejournal.com/update.bml?usejournal={$journalname}&subject={$title}&event={$description}`
+URL: `https://plus.google.com/share?url={$url}`
 
 ## Add to Delicious
 
@@ -48,21 +40,13 @@ Facebook is a social utility that connects people with friends and others who wo
 
 URL: `http://www.facebook.com/sharer.php?&u={$url}&t={$title}`
 
-## Add to Google Bookmarks
+## Share on LinkedIn
 
-Google Bookmarks feature lets you save shortcuts to your favorite webpages, and navigate to them in seconds. 
+LinkedIn is a business-oriented social networking site. Founded in December 2002 and launched in May 2003, it is mainly used for professional networking. As of 2 November 2010, LinkedIn had more than 80 million registered users, spanning more than 200 countries and territories worldwide.
 
-![Add to Google Bookmarks](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/google_bookmarks.png) <a href='http://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk=https%3A%2F%2Fgithub.com%2Fsergeychernyshev%2FSharing-Buttons&title=Sharing+Buttons&annotation=Code+libraries+to+work+with+sharing+buttons&labels=share' target='blank'>Add to Google Bookmarks</a>
+![Share on LinkedIn](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/linkedin.png) <a href='http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fgithub.com%2Fsergeychernyshev%2FSharing-Buttons&title=Sharing+Buttons&summary=Code+libraries+to+work+with+sharing+buttons' target='blank'>Share on LinkedIn</a>
 
-URL: `http://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk={$url}&title={$title}&annotation={$description}&labels={$tags}`
-
-## Seed Newsvine
-
-Newsvine is a community-powered news website which draws content from its users and syndicated content from mainstream sources such as The Associated Press. Users can write articles, seed links to external content, and discuss news items submitted by both users and professional journalists. 
-
-![Seed Newsvine](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/newsvine.gif) <a href='http://www.newsvine.com/_tools/seed&save?u=https%3A%2F%2Fgithub.com%2Fsergeychernyshev%2FSharing-Buttons&h=Sharing+Buttons' target='blank'>Seed Newsvine</a>
-
-URL: `http://www.newsvine.com/_tools/seed&save?u={$url}&h={$title}`
+URL: `http://www.linkedin.com/shareArticle?mini=true&url={$url}&title={$title}&summary={$description}`
 
 ## Reddit this
 
@@ -79,6 +63,22 @@ Add to Stumble Upon social link sharing service
 ![Stumble!](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/stumbleupon.gif) <a href='http://www.stumbleupon.com/submit?url=https://github.com/sergeychernyshev/Sharing-Buttons&title=Sharing+Buttons' target='blank'>Stumble!</a>
 
 URL: `http://www.stumbleupon.com/submit?url={$url.raw}&title={$title}`
+
+## Add to Google Bookmarks
+
+Google Bookmarks feature lets you save shortcuts to your favorite webpages, and navigate to them in seconds. 
+
+![Add to Google Bookmarks](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/google_bookmarks.png) <a href='http://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk=https%3A%2F%2Fgithub.com%2Fsergeychernyshev%2FSharing-Buttons&title=Sharing+Buttons&annotation=Code+libraries+to+work+with+sharing+buttons&labels=share' target='blank'>Add to Google Bookmarks</a>
+
+URL: `http://www.google.com/bookmarks/mark?op=edit&output=popup&bkmk={$url}&title={$title}&annotation={$description}&labels={$tags}`
+
+## Seed Newsvine
+
+Newsvine is a community-powered news website which draws content from its users and syndicated content from mainstream sources such as The Associated Press. Users can write articles, seed links to external content, and discuss news items submitted by both users and professional journalists. 
+
+![Seed Newsvine](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/newsvine.gif) <a href='http://www.newsvine.com/_tools/seed&save?u=https%3A%2F%2Fgithub.com%2Fsergeychernyshev%2FSharing-Buttons&h=Sharing+Buttons' target='blank'>Seed Newsvine</a>
+
+URL: `http://www.newsvine.com/_tools/seed&save?u={$url}&h={$title}`
 
 ## Post to Wordpress blog
 
@@ -152,19 +152,11 @@ Digg is a social news website made for people to discover and share content from
 
 URL: `http://digg.com/submit?url={$url.raw}`
 
-## Share on LinkedIn
+## Post to LiveJournal
 
-LinkedIn is a business-oriented social networking site. Founded in December 2002 and launched in May 2003, it is mainly used for professional networking. As of 2 November 2010, LinkedIn had more than 80 million registered users, spanning more than 200 countries and territories worldwide.
+Post it to LiveJournal blog or community.
 
-![Share on LinkedIn](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/linkedin.png) <a href='http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fgithub.com%2Fsergeychernyshev%2FSharing-Buttons&title=Sharing+Buttons&summary=Code+libraries+to+work+with+sharing+buttons' target='blank'>Share on LinkedIn</a>
+![Post to LiveJournal](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/livejournal.png) <a href='http://www.livejournal.com/update.bml?usejournal=sergeyche&subject=Sharing+Buttons&event=Code+libraries+to+work+with+sharing+buttons' target='blank'>Post to LiveJournal</a>
 
-URL: `http://www.linkedin.com/shareArticle?mini=true&url={$url}&title={$title}&summary={$description}`
-
-## Post to Google+
-
-Share on Google Plus
-
-![Post to Google+](https://raw.githubusercontent.com/sergeychernyshev/Sharing-Buttons/master/icons/googleplus.png) <a href='https://plus.google.com/share?url=https%3A%2F%2Fgithub.com%2Fsergeychernyshev%2FSharing-Buttons' target='blank'>Post to Google+</a>
-
-URL: `https://plus.google.com/share?url={$url}`
+URL: `http://www.livejournal.com/update.bml?usejournal={$journalname}&subject={$title}&event={$description}`
 
